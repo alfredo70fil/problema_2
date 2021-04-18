@@ -40,36 +40,41 @@ namespace problema_2
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(1309, 47);
+            this.btnMenu.Location = new System.Drawing.Point(982, 38);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(75, 23);
+            this.btnMenu.Size = new System.Drawing.Size(56, 19);
             this.btnMenu.TabIndex = 0;
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnRecetas
             // 
-            this.btnRecetas.Location = new System.Drawing.Point(1309, 96);
+            this.btnRecetas.Location = new System.Drawing.Point(982, 78);
+            this.btnRecetas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRecetas.Name = "btnRecetas";
-            this.btnRecetas.Size = new System.Drawing.Size(75, 23);
+            this.btnRecetas.Size = new System.Drawing.Size(56, 19);
             this.btnRecetas.TabIndex = 1;
             this.btnRecetas.Text = "Recetas";
             this.btnRecetas.UseVisualStyleBackColor = true;
             // 
             // btnAlmacen
             // 
-            this.btnAlmacen.Location = new System.Drawing.Point(1309, 155);
+            this.btnAlmacen.Location = new System.Drawing.Point(982, 126);
+            this.btnAlmacen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(75, 23);
+            this.btnAlmacen.Size = new System.Drawing.Size(56, 19);
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
             // 
             // btnSalida
             // 
-            this.btnSalida.Location = new System.Drawing.Point(1309, 214);
+            this.btnSalida.Location = new System.Drawing.Point(982, 174);
+            this.btnSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(75, 23);
+            this.btnSalida.Size = new System.Drawing.Size(56, 19);
             this.btnSalida.TabIndex = 3;
             this.btnSalida.Text = "Salir";
             this.btnSalida.UseVisualStyleBackColor = true;
@@ -77,32 +82,34 @@ namespace problema_2
             // listTabla
             // 
             this.listTabla.FormattingEnabled = true;
-            this.listTabla.ItemHeight = 16;
-            this.listTabla.Location = new System.Drawing.Point(12, 12);
+            this.listTabla.Location = new System.Drawing.Point(9, 10);
+            this.listTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listTabla.Name = "listTabla";
-            this.listTabla.Size = new System.Drawing.Size(1029, 484);
+            this.listTabla.Size = new System.Drawing.Size(773, 394);
             this.listTabla.TabIndex = 4;
             // 
             // picPlato
             // 
             this.picPlato.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.picPlato.Location = new System.Drawing.Point(1047, 19);
+            this.picPlato.Location = new System.Drawing.Point(785, 15);
+            this.picPlato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPlato.Name = "picPlato";
-            this.picPlato.Size = new System.Drawing.Size(256, 229);
+            this.picPlato.Size = new System.Drawing.Size(192, 186);
             this.picPlato.TabIndex = 5;
             this.picPlato.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 507);
+            this.ClientSize = new System.Drawing.Size(1078, 412);
             this.Controls.Add(this.picPlato);
             this.Controls.Add(this.listTabla);
             this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.btnAlmacen);
             this.Controls.Add(this.btnRecetas);
             this.Controls.Add(this.btnMenu);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
