@@ -42,6 +42,7 @@ namespace problema_2
             this.btnver2.TabIndex = 0;
             this.btnver2.Text = "Ver tabla";
             this.btnver2.UseVisualStyleBackColor = true;
+            this.btnver2.Click += new System.EventHandler(this.btnver2_Click);
             // 
             // btnsubir2
             // 

@@ -26,7 +26,7 @@ namespace problema_2
 
         private void btnRecetas_Click(object sender, EventArgs e)
         {
-            Recetas recetas = new Recetas();
+            verreceta recetas = new verreceta();
             recetas.ShowDialog();
         }
 

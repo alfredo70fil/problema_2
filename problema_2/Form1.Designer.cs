@@ -35,6 +35,7 @@ namespace problema_2
             this.btnSalida = new System.Windows.Forms.Button();
             this.listTabla = new System.Windows.Forms.ListBox();
             this.picPlato = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPlato)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,11 +74,11 @@ namespace problema_2
             // 
             // btnSalida
             // 
-            this.btnSalida.Location = new System.Drawing.Point(982, 174);
+            this.btnSalida.Location = new System.Drawing.Point(982, 212);
             this.btnSalida.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(56, 19);
-            this.btnSalida.TabIndex = 3;
+            this.btnSalida.TabIndex = 5;
             this.btnSalida.Text = "Salir";
             this.btnSalida.UseVisualStyleBackColor = true;
             this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
@@ -89,7 +90,7 @@ namespace problema_2
             this.listTabla.Margin = new System.Windows.Forms.Padding(2);
             this.listTabla.Name = "listTabla";
             this.listTabla.Size = new System.Drawing.Size(773, 394);
-            this.listTabla.TabIndex = 4;
+            this.listTabla.TabIndex = 8;
             // 
             // picPlato
             // 
@@ -101,11 +102,21 @@ namespace problema_2
             this.picPlato.TabIndex = 5;
             this.picPlato.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(982, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 412);
+            this.ClientSize = new System.Drawing.Size(1211, 412);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.picPlato);
             this.Controls.Add(this.listTabla);
             this.Controls.Add(this.btnSalida);
@@ -128,6 +139,7 @@ namespace problema_2
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.ListBox listTabla;
         private System.Windows.Forms.PictureBox picPlato;
+        private System.Windows.Forms.Button button1;
     }
 }
 

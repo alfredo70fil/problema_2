@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace problema_2
 {
@@ -21,6 +20,11 @@ namespace problema_2
         private void btnSalir2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnver2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

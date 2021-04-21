@@ -52,6 +52,11 @@
     <Compile Include="Almacen.Designer.cs">
       <DependentUpon>Almacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="cartaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cartaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +76,18 @@
     </Compile>
     <Compile Include="Recetas.Designer.cs">
       <DependentUpon>Recetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subirreceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subirreceta.Designer.cs">
+      <DependentUpon>Subirreceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verrecetita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verrecetita.Designer.cs">
+      <DependentUpon>verrecetita.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Almacen.resx">
       <DependentUpon>Almacen.cs</DependentUpon>
@@ -93,6 +110,23 @@
     <EmbeddedResource Include="Recetas.resx">
       <DependentUpon>Recetas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Subirreceta.resx">
+      <DependentUpon>Subirreceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verrecetita.resx">
+      <DependentUpon>verrecetita.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="cartaDataSet.xsc">
+      <DependentUpon>cartaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cartaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cartaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cartaDataSet.xss">
+      <DependentUpon>cartaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

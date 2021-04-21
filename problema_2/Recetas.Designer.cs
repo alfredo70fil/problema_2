@@ -1,7 +1,7 @@
 ﻿
 namespace problema_2
 {
-    partial class Recetas
+    partial class verreceta
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@ namespace problema_2
             this.btnVer3.TabIndex = 0;
             this.btnVer3.Text = "Ver tabla";
             this.btnVer3.UseVisualStyleBackColor = true;
+            this.btnVer3.Click += new System.EventHandler(this.btnVer3_Click);
             // 
             // btnSubir3
             // 
@@ -51,9 +52,11 @@ namespace problema_2
             this.btnSubir3.TabIndex = 1;
             this.btnSubir3.Text = "Subir datos";
             this.btnSubir3.UseVisualStyleBackColor = true;
+            this.btnSubir3.Click += new System.EventHandler(this.btnSubir3_Click);
             // 
             // btnSalir3
             // 
+            this.btnSalir3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSalir3.Location = new System.Drawing.Point(197, 47);
             this.btnSalir3.Name = "btnSalir3";
             this.btnSalir3.Size = new System.Drawing.Size(75, 23);
@@ -62,15 +65,17 @@ namespace problema_2
             this.btnSalir3.UseVisualStyleBackColor = true;
             this.btnSalir3.Click += new System.EventHandler(this.btnSalir3_Click);
             // 
-            // Recetas
+            // verreceta
             // 
+            this.AcceptButton = this.btnVer3;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnSalir3;
             this.ClientSize = new System.Drawing.Size(309, 123);
             this.Controls.Add(this.btnSalir3);
             this.Controls.Add(this.btnSubir3);
             this.Controls.Add(this.btnVer3);
-            this.Name = "Recetas";
+            this.Name = "verreceta";
             this.Text = "Recetas";
             this.ResumeLayout(false);
 

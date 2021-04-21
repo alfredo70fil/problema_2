@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace problema_2
 {
-    public partial class Recetas : Form
+    public partial class verreceta : Form
     {
-        public Recetas()
+        public verreceta()
         {
             InitializeComponent();
         }
@@ -21,6 +20,18 @@ namespace problema_2
         private void btnSalir3_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnVer3_Click(object sender, EventArgs e)
+        {
+            verrecetita rece = new verrecetita();
+            rece.ShowDialog();
+        }
+
+        private void btnSubir3_Click(object sender, EventArgs e)
+        {
+            Subirreceta subir = new Subirreceta();
+            subir.ShowDialog();
         }
     }
 }
