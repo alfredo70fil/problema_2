@@ -44,7 +44,7 @@ namespace problema_2
             this.btnCategoria.Location = new System.Drawing.Point(982, 38);
             this.btnCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(75, 19);
+            this.btnCategoria.Size = new System.Drawing.Size(75, 25);
             this.btnCategoria.TabIndex = 0;
             this.btnCategoria.Text = "Categoria";
             this.btnCategoria.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@ namespace problema_2
             this.btnRecetas.Location = new System.Drawing.Point(982, 78);
             this.btnRecetas.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecetas.Name = "btnRecetas";
-            this.btnRecetas.Size = new System.Drawing.Size(75, 19);
+            this.btnRecetas.Size = new System.Drawing.Size(75, 25);
             this.btnRecetas.TabIndex = 1;
             this.btnRecetas.Text = "Recetas";
             this.btnRecetas.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@ namespace problema_2
             this.btnAlmacen.Location = new System.Drawing.Point(982, 126);
             this.btnAlmacen.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(75, 19);
+            this.btnAlmacen.Size = new System.Drawing.Size(75, 25);
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@ namespace problema_2
             this.btnSalida.Location = new System.Drawing.Point(982, 212);
             this.btnSalida.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(75, 19);
+            this.btnSalida.Size = new System.Drawing.Size(75, 25);
             this.btnSalida.TabIndex = 5;
             this.btnSalida.Text = "Salir";
             this.btnSalida.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@ namespace problema_2
             // 
             this.btningredientes.Location = new System.Drawing.Point(982, 171);
             this.btningredientes.Name = "btningredientes";
-            this.btningredientes.Size = new System.Drawing.Size(75, 19);
+            this.btningredientes.Size = new System.Drawing.Size(75, 25);
             this.btningredientes.TabIndex = 3;
             this.btningredientes.Text = "Ingredientes";
             this.btningredientes.UseVisualStyleBackColor = true;

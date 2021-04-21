@@ -36,7 +36,9 @@ namespace problema_2
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblEncargado = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEncargado = new System.Windows.Forms.TextBox();
+            this.btnSubir = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblid
@@ -58,7 +60,7 @@ namespace problema_2
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(65, 108);
+            this.lblnombre.Location = new System.Drawing.Point(65, 97);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(44, 13);
             this.lblnombre.TabIndex = 2;
@@ -66,7 +68,7 @@ namespace problema_2
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(147, 108);
+            this.txtNombre.Location = new System.Drawing.Point(147, 97);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 3;
@@ -74,7 +76,7 @@ namespace problema_2
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(65, 150);
+            this.lblDescripcion.Location = new System.Drawing.Point(65, 139);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcion.TabIndex = 4;
@@ -82,7 +84,7 @@ namespace problema_2
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(147, 150);
+            this.txtDescripcion.Location = new System.Drawing.Point(147, 139);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 5;
@@ -90,25 +92,50 @@ namespace problema_2
             // lblEncargado
             // 
             this.lblEncargado.AutoSize = true;
-            this.lblEncargado.Location = new System.Drawing.Point(65, 194);
+            this.lblEncargado.Location = new System.Drawing.Point(65, 183);
             this.lblEncargado.Name = "lblEncargado";
             this.lblEncargado.Size = new System.Drawing.Size(59, 13);
             this.lblEncargado.TabIndex = 6;
             this.lblEncargado.Text = "Encargado";
             // 
-            // textBox1
+            // txtEncargado
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtEncargado.Location = new System.Drawing.Point(147, 176);
+            this.txtEncargado.Name = "txtEncargado";
+            this.txtEncargado.Size = new System.Drawing.Size(100, 20);
+            this.txtEncargado.TabIndex = 7;
+            // 
+            // btnSubir
+            // 
+            this.btnSubir.Location = new System.Drawing.Point(67, 220);
+            this.btnSubir.Name = "btnSubir";
+            this.btnSubir.Size = new System.Drawing.Size(75, 23);
+            this.btnSubir.TabIndex = 8;
+            this.btnSubir.Text = "Subir";
+            this.btnSubir.UseVisualStyleBackColor = true;
+            this.btnSubir.Click += new System.EventHandler(this.btnSubir_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCerrar.Location = new System.Drawing.Point(172, 220);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 9;
+            this.btnCerrar.Text = "Salir";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // Subircategoria
             // 
+            this.AcceptButton = this.btnSubir;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 298);
-            this.Controls.Add(this.textBox1);
+            this.CancelButton = this.btnCerrar;
+            this.ClientSize = new System.Drawing.Size(306, 290);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnSubir);
+            this.Controls.Add(this.txtEncargado);
             this.Controls.Add(this.lblEncargado);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblDescripcion);
@@ -132,6 +159,8 @@ namespace problema_2
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label lblEncargado;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEncargado;
+        private System.Windows.Forms.Button btnSubir;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }
