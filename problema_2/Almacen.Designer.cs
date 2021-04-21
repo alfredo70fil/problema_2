@@ -52,6 +52,7 @@ namespace problema_2
             this.btnsubir2.TabIndex = 1;
             this.btnsubir2.Text = "Subir datos";
             this.btnsubir2.UseVisualStyleBackColor = true;
+            this.btnsubir2.Click += new System.EventHandler(this.btnsubir2_Click);
             // 
             // btnSalir2
             // 

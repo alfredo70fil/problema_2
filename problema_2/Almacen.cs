@@ -26,5 +26,10 @@ namespace problema_2
         {
 
         }
+
+        private void btnsubir2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
