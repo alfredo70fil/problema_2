@@ -1,7 +1,7 @@
 ﻿
 namespace problema_2
 {
-    partial class Menu
+    partial class Categoria
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,7 @@ namespace problema_2
             this.btn.UseVisualStyleBackColor = true;
             this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // Menu
+            // Categoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,8 +71,8 @@ namespace problema_2
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnSubir);
             this.Controls.Add(this.btnver);
-            this.Name = "Menu";
-            this.Text = "Menu";
+            this.Name = "Categoria";
+            this.Text = "Categoria";
             this.ResumeLayout(false);
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace problema_2
 {
-    public partial class Menu : Form
+    public partial class Categoria : Form
     {
-        public Menu()
+        public Categoria()
         {
             InitializeComponent();
         }

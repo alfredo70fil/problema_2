@@ -24,12 +24,14 @@ namespace problema_2
 
         private void btnver2_Click(object sender, EventArgs e)
         {
-
+            Veralmacen alma = new Veralmacen();
+            alma.ShowDialog();
         }
 
         private void btnsubir2_Click(object sender, EventArgs e)
         {
-
+            Subiralmacen alma = new Subiralmacen();
+            alma.ShowDialog();
         }
     }
 }

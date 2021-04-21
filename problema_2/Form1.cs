@@ -20,7 +20,7 @@ namespace problema_2
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Menu menutable = new Menu();
+            Categoria menutable = new Categoria();
             menutable.ShowDialog();
         }
 
