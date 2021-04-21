@@ -29,13 +29,48 @@ namespace problema_2
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnver = new System.Windows.Forms.Button();
+            this.btnSubir = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnver
+            // 
+            this.btnver.Location = new System.Drawing.Point(32, 51);
+            this.btnver.Name = "btnver";
+            this.btnver.Size = new System.Drawing.Size(75, 23);
+            this.btnver.TabIndex = 0;
+            this.btnver.Text = "Ver tabla";
+            this.btnver.UseVisualStyleBackColor = true;
+            this.btnver.Click += new System.EventHandler(this.btnver_Click);
+            // 
+            // btnSubir
+            // 
+            this.btnSubir.Location = new System.Drawing.Point(126, 51);
+            this.btnSubir.Name = "btnSubir";
+            this.btnSubir.Size = new System.Drawing.Size(75, 23);
+            this.btnSubir.TabIndex = 1;
+            this.btnSubir.Text = "Subir datos";
+            this.btnSubir.UseVisualStyleBackColor = true;
+            // 
+            // btn
+            // 
+            this.btn.Location = new System.Drawing.Point(219, 51);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(75, 23);
+            this.btn.TabIndex = 2;
+            this.btn.Text = "Salir";
+            this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 308);
+            this.ClientSize = new System.Drawing.Size(329, 132);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.btnSubir);
+            this.Controls.Add(this.btnver);
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);
@@ -43,5 +78,9 @@ namespace problema_2
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnver;
+        private System.Windows.Forms.Button btnSubir;
+        private System.Windows.Forms.Button btn;
     }
 }

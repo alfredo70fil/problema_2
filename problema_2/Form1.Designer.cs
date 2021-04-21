@@ -69,6 +69,7 @@ namespace problema_2
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // btnSalida
             // 
@@ -79,6 +80,7 @@ namespace problema_2
             this.btnSalida.TabIndex = 3;
             this.btnSalida.Text = "Salir";
             this.btnSalida.UseVisualStyleBackColor = true;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
             // 
             // listTabla
             // 
@@ -113,7 +115,6 @@ namespace problema_2
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPlato)).EndInit();
             this.ResumeLayout(false);
 

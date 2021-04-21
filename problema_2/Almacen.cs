@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace problema_2
 {
@@ -15,6 +16,11 @@ namespace problema_2
         public Almacen()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

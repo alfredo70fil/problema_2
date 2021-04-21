@@ -12,25 +12,33 @@ namespace problema_2
 {
     public partial class Form1 : Form
     {
-        SqlConnection conexion = new SqlConnection("server=hikarinohakate.database.windows.net; Initial Catalog=Carta; integrated security=true");
+        
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
-
+            Menu menutable = new Menu();
+            menutable.ShowDialog();
         }
 
         private void btnRecetas_Click(object sender, EventArgs e)
         {
-            SqlCommand altas = new SqlCommand("insert into  ()");
+            Recetas recetas = new Recetas();
+            recetas.ShowDialog();
+        }
+
+        private void btnSalida_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnAlmacen_Click(object sender, EventArgs e)
+        {
+            Almacen almacen = new Almacen();
+            almacen.ShowDialog();
         }
     }
 }
