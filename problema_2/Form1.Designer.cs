@@ -35,7 +35,6 @@ namespace problema_2
             this.btnSalida = new System.Windows.Forms.Button();
             this.listTabla = new System.Windows.Forms.ListBox();
             this.picPlato = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlato)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,19 +99,11 @@ namespace problema_2
             this.picPlato.TabIndex = 5;
             this.picPlato.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(800, 264);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 412);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.picPlato);
             this.Controls.Add(this.listTabla);
             this.Controls.Add(this.btnSalida);
@@ -125,7 +116,6 @@ namespace problema_2
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPlato)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -137,7 +127,6 @@ namespace problema_2
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.ListBox listTabla;
         private System.Windows.Forms.PictureBox picPlato;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
