@@ -110,6 +110,7 @@ namespace problema_2
             this.btningredientes.TabIndex = 3;
             this.btningredientes.Text = "Ingredientes";
             this.btningredientes.UseVisualStyleBackColor = true;
+            this.btningredientes.Click += new System.EventHandler(this.btningredientes_Click);
             // 
             // Form1
             // 

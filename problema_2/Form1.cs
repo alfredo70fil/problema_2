@@ -40,5 +40,10 @@ namespace problema_2
             Almacen almacen = new Almacen();
             almacen.ShowDialog();
         }
+
+        private void btningredientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

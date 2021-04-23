@@ -62,6 +62,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cartaDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="cartaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cartaDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +111,12 @@
     <Compile Include="Veralmacen.Designer.cs">
       <DependentUpon>Veralmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="vercategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vercategoria.Designer.cs">
+      <DependentUpon>vercategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="verrecetita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +156,9 @@
     <EmbeddedResource Include="Veralmacen.resx">
       <DependentUpon>Veralmacen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vercategoria.resx">
+      <DependentUpon>vercategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="verrecetita.resx">
       <DependentUpon>verrecetita.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +183,17 @@
     </None>
     <None Include="cartaDataSet1.xss">
       <DependentUpon>cartaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cartaDataSet2.xsc">
+      <DependentUpon>cartaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cartaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cartaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cartaDataSet2.xss">
+      <DependentUpon>cartaDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
