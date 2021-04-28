@@ -68,7 +68,6 @@ namespace problema_2
             this.btningredientes.Name = "btningredientes";
             this.btningredientes.Size = new System.Drawing.Size(173, 185);
             this.btningredientes.TabIndex = 3;
-            this.btningredientes.Text = "Ingredientes";
             this.btningredientes.UseVisualStyleBackColor = true;
             this.btningredientes.Click += new System.EventHandler(this.btningredientes_Click);
             this.btningredientes.MouseHover += new System.EventHandler(this.btningredientes_MouseHover);
