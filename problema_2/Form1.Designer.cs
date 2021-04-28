@@ -41,21 +41,21 @@ namespace problema_2
             // listTabla
             // 
             this.listTabla.FormattingEnabled = true;
-            this.listTabla.ItemHeight = 16;
-            this.listTabla.Location = new System.Drawing.Point(12, 12);
-            this.listTabla.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listTabla.Location = new System.Drawing.Point(9, 10);
+            this.listTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listTabla.Name = "listTabla";
-            this.listTabla.Size = new System.Drawing.Size(1014, 660);
+            this.listTabla.Size = new System.Drawing.Size(762, 537);
             this.listTabla.TabIndex = 8;
             // 
             // btnPlatillo
             // 
             this.btnPlatillo.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnPlatillo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPlatillo.Image = global::problema_2.Properties.Resources.icono_Platillo;
-            this.btnPlatillo.Location = new System.Drawing.Point(1046, 12);
+            this.btnPlatillo.Image = global::problema_2.Properties.Resources.icono_Platillo1;
+            this.btnPlatillo.Location = new System.Drawing.Point(784, 10);
+            this.btnPlatillo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlatillo.Name = "btnPlatillo";
-            this.btnPlatillo.Size = new System.Drawing.Size(231, 228);
+            this.btnPlatillo.Size = new System.Drawing.Size(173, 185);
             this.btnPlatillo.TabIndex = 9;
             this.btnPlatillo.UseVisualStyleBackColor = true;
             this.btnPlatillo.UseWaitCursor = true;
@@ -63,11 +63,10 @@ namespace problema_2
             // 
             // btningredientes
             // 
-            this.btningredientes.Image = global::problema_2.Properties.Resources.icono_Ingredientes;
-            this.btningredientes.Location = new System.Drawing.Point(1047, 477);
-            this.btningredientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btningredientes.Image = global::problema_2.Properties.Resources.icono_Ingredientes1;
+            this.btningredientes.Location = new System.Drawing.Point(785, 388);
             this.btningredientes.Name = "btningredientes";
-            this.btningredientes.Size = new System.Drawing.Size(230, 214);
+            this.btningredientes.Size = new System.Drawing.Size(173, 185);
             this.btningredientes.TabIndex = 3;
             this.btningredientes.Text = "Ingredientes";
             this.btningredientes.UseVisualStyleBackColor = true;
@@ -76,11 +75,11 @@ namespace problema_2
             // 
             // btnSalida
             // 
-            this.btnSalida.Image = global::problema_2.Properties.Resources.icono_Salir;
-            this.btnSalida.Location = new System.Drawing.Point(1284, 477);
-            this.btnSalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSalida.Image = global::problema_2.Properties.Resources.icono_Salir1;
+            this.btnSalida.Location = new System.Drawing.Point(963, 388);
+            this.btnSalida.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(225, 214);
+            this.btnSalida.Size = new System.Drawing.Size(173, 185);
             this.btnSalida.TabIndex = 5;
             this.btnSalida.UseVisualStyleBackColor = true;
             this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
@@ -88,11 +87,11 @@ namespace problema_2
             // 
             // btnAlmacen
             // 
-            this.btnAlmacen.Image = global::problema_2.Properties.Resources.icono_Almacen;
-            this.btnAlmacen.Location = new System.Drawing.Point(1284, 243);
-            this.btnAlmacen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAlmacen.Image = global::problema_2.Properties.Resources.icono_Almacen1;
+            this.btnAlmacen.Location = new System.Drawing.Point(963, 197);
+            this.btnAlmacen.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(225, 228);
+            this.btnAlmacen.Size = new System.Drawing.Size(173, 185);
             this.btnAlmacen.TabIndex = 2;
             this.btnAlmacen.UseVisualStyleBackColor = true;
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
@@ -100,11 +99,11 @@ namespace problema_2
             // 
             // btnRecetas
             // 
-            this.btnRecetas.Image = global::problema_2.Properties.Resources.icono_Recetas;
-            this.btnRecetas.Location = new System.Drawing.Point(1047, 243);
-            this.btnRecetas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRecetas.Image = global::problema_2.Properties.Resources.icono_Recetas1;
+            this.btnRecetas.Location = new System.Drawing.Point(785, 197);
+            this.btnRecetas.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecetas.Name = "btnRecetas";
-            this.btnRecetas.Size = new System.Drawing.Size(231, 228);
+            this.btnRecetas.Size = new System.Drawing.Size(173, 185);
             this.btnRecetas.TabIndex = 1;
             this.btnRecetas.UseVisualStyleBackColor = true;
             this.btnRecetas.Click += new System.EventHandler(this.btnRecetas_Click);
@@ -112,11 +111,11 @@ namespace problema_2
             // 
             // btnCategoria
             // 
-            this.btnCategoria.Image = global::problema_2.Properties.Resources.icono_categoria;
-            this.btnCategoria.Location = new System.Drawing.Point(1284, 12);
-            this.btnCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCategoria.Image = global::problema_2.Properties.Resources.icono_categoria1;
+            this.btnCategoria.Location = new System.Drawing.Point(963, 10);
+            this.btnCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(225, 226);
+            this.btnCategoria.Size = new System.Drawing.Size(173, 185);
             this.btnCategoria.TabIndex = 0;
             this.btnCategoria.UseVisualStyleBackColor = true;
             this.btnCategoria.Click += new System.EventHandler(this.btnMenu_Click);
@@ -124,10 +123,10 @@ namespace problema_2
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1680, 741);
+            this.ClientSize = new System.Drawing.Size(1139, 602);
             this.Controls.Add(this.btnPlatillo);
             this.Controls.Add(this.btningredientes);
             this.Controls.Add(this.listTabla);
@@ -135,7 +134,7 @@ namespace problema_2
             this.Controls.Add(this.btnAlmacen);
             this.Controls.Add(this.btnRecetas);
             this.Controls.Add(this.btnCategoria);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

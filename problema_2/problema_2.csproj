@@ -227,5 +227,23 @@
   <ItemGroup>
     <None Include="Resources\icono Salir.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono Platillo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono categoria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono Recetas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono Almacen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono Ingredientes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono Salir1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
