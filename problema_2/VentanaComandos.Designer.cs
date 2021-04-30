@@ -51,14 +51,14 @@ namespace problema_2
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnSalida = new System.Windows.Forms.Button();
             this.btnFoto = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.imgPlato = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPlato)).BeginInit();
             this.SuspendLayout();
             // 
             // lblcampo1
             // 
             this.lblcampo1.AutoSize = true;
-            this.lblcampo1.Location = new System.Drawing.Point(23, 66);
+            this.lblcampo1.Location = new System.Drawing.Point(23, 59);
             this.lblcampo1.Name = "lblcampo1";
             this.lblcampo1.Size = new System.Drawing.Size(0, 13);
             this.lblcampo1.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace problema_2
             // lblcampo2
             // 
             this.lblcampo2.AutoSize = true;
-            this.lblcampo2.Location = new System.Drawing.Point(23, 95);
+            this.lblcampo2.Location = new System.Drawing.Point(23, 93);
             this.lblcampo2.Name = "lblcampo2";
             this.lblcampo2.Size = new System.Drawing.Size(0, 13);
             this.lblcampo2.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace problema_2
             // lblcampo3
             // 
             this.lblcampo3.AutoSize = true;
-            this.lblcampo3.Location = new System.Drawing.Point(23, 129);
+            this.lblcampo3.Location = new System.Drawing.Point(23, 126);
             this.lblcampo3.Name = "lblcampo3";
             this.lblcampo3.Size = new System.Drawing.Size(0, 13);
             this.lblcampo3.TabIndex = 2;
@@ -185,6 +185,7 @@ namespace problema_2
             this.btnConsulta.TabIndex = 16;
             this.btnConsulta.Text = "&Consulta";
             this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnAgregar
             // 
@@ -194,6 +195,7 @@ namespace problema_2
             this.btnAgregar.TabIndex = 17;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
@@ -203,6 +205,7 @@ namespace problema_2
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -212,6 +215,7 @@ namespace problema_2
             this.btnModificar.TabIndex = 19;
             this.btnModificar.Text = "&Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnSalida
             // 
@@ -232,14 +236,16 @@ namespace problema_2
             this.btnFoto.TabIndex = 21;
             this.btnFoto.Text = "Subir foto";
             this.btnFoto.UseVisualStyleBackColor = true;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
             // 
-            // pictureBox1
+            // imgPlato
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(279, 180);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 105);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.imgPlato.Location = new System.Drawing.Point(279, 180);
+            this.imgPlato.Name = "imgPlato";
+            this.imgPlato.Size = new System.Drawing.Size(108, 105);
+            this.imgPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgPlato.TabIndex = 22;
+            this.imgPlato.TabStop = false;
             // 
             // VentanaComandos
             // 
@@ -248,7 +254,7 @@ namespace problema_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnSalida;
             this.ClientSize = new System.Drawing.Size(399, 297);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgPlato);
             this.Controls.Add(this.btnFoto);
             this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.btnModificar);
@@ -273,7 +279,8 @@ namespace problema_2
             this.Controls.Add(this.lblcampo1);
             this.Name = "VentanaComandos";
             this.Text = "VentanaComandos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.VentanaComandos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgPlato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,6 +310,6 @@ namespace problema_2
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.Button btnFoto;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgPlato;
     }
 }

@@ -94,5 +94,12 @@ namespace problema_2
             VentanaComandos comandos = new VentanaComandos(1);
             comandos.ShowDialog();
         }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'cARTADataSet.Plato' Puede moverla o quitarla según sea necesario.
+            this.platoTableAdapter.Fill(this.cARTADataSet.Plato);
+
+        }
     }
 }

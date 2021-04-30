@@ -33,5 +33,15 @@ namespace problema_2.Properties {
                 return ((string)(this["cartaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-F1FMVHP;Initial Catalog=CARTA;Integrated Security=True")]
+        public string CARTAConnectionString1 {
+            get {
+                return ((string)(this["CARTAConnectionString1"]));
+            }
+        }
     }
 }

@@ -29,12 +29,27 @@ namespace problema_2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPlatillo = new System.Windows.Forms.Button();
             this.btningredientes = new System.Windows.Forms.Button();
             this.btnSalida = new System.Windows.Forms.Button();
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.btnRecetas = new System.Windows.Forms.Button();
             this.btnCategoria = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cARTADataSet = new problema_2.CARTADataSet();
+            this.platoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.platoTableAdapter = new problema_2.CARTADataSetTableAdapters.PlatoTableAdapter();
+            this.idPlatoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dificultadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idRecetaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cARTADataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPlatillo
@@ -112,6 +127,83 @@ namespace problema_2
             this.btnCategoria.Click += new System.EventHandler(this.btnMenu_Click);
             this.btnCategoria.MouseHover += new System.EventHandler(this.btnCategoria_MouseHover);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idPlatoDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.descripcionDataGridViewTextBoxColumn,
+            this.fotoDataGridViewImageColumn,
+            this.precioDataGridViewTextBoxColumn,
+            this.dificultadDataGridViewTextBoxColumn,
+            this.idRecetaDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.platoBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(767, 561);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // cARTADataSet
+            // 
+            this.cARTADataSet.DataSetName = "CARTADataSet";
+            this.cARTADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // platoBindingSource
+            // 
+            this.platoBindingSource.DataMember = "Plato";
+            this.platoBindingSource.DataSource = this.cARTADataSet;
+            // 
+            // platoTableAdapter
+            // 
+            this.platoTableAdapter.ClearBeforeFill = true;
+            // 
+            // idPlatoDataGridViewTextBoxColumn
+            // 
+            this.idPlatoDataGridViewTextBoxColumn.DataPropertyName = "idPlato";
+            this.idPlatoDataGridViewTextBoxColumn.HeaderText = "idPlato";
+            this.idPlatoDataGridViewTextBoxColumn.Name = "idPlatoDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            // 
+            // fotoDataGridViewImageColumn
+            // 
+            this.fotoDataGridViewImageColumn.DataPropertyName = "Foto";
+            this.fotoDataGridViewImageColumn.HeaderText = "Foto";
+            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
+            // 
+            // precioDataGridViewTextBoxColumn
+            // 
+            this.precioDataGridViewTextBoxColumn.DataPropertyName = "Precio";
+            this.precioDataGridViewTextBoxColumn.HeaderText = "Precio";
+            this.precioDataGridViewTextBoxColumn.Name = "precioDataGridViewTextBoxColumn";
+            // 
+            // dificultadDataGridViewTextBoxColumn
+            // 
+            this.dificultadDataGridViewTextBoxColumn.DataPropertyName = "Dificultad";
+            this.dificultadDataGridViewTextBoxColumn.HeaderText = "Dificultad";
+            this.dificultadDataGridViewTextBoxColumn.Name = "dificultadDataGridViewTextBoxColumn";
+            // 
+            // idRecetaDataGridViewTextBoxColumn
+            // 
+            this.idRecetaDataGridViewTextBoxColumn.DataPropertyName = "idReceta";
+            this.idRecetaDataGridViewTextBoxColumn.HeaderText = "idReceta";
+            this.idRecetaDataGridViewTextBoxColumn.Name = "idRecetaDataGridViewTextBoxColumn";
+            // 
             // frmMenu
             // 
             this.AcceptButton = this.btnPlatillo;
@@ -120,6 +212,7 @@ namespace problema_2
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CancelButton = this.btnSalida;
             this.ClientSize = new System.Drawing.Size(1139, 602);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPlatillo);
             this.Controls.Add(this.btningredientes);
             this.Controls.Add(this.btnSalida);
@@ -129,6 +222,10 @@ namespace problema_2
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenu";
             this.Text = "Menú";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cARTADataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,6 +238,17 @@ namespace problema_2
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.Button btningredientes;
         private System.Windows.Forms.Button btnPlatillo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private CARTADataSet cARTADataSet;
+        private System.Windows.Forms.BindingSource platoBindingSource;
+        private CARTADataSetTableAdapters.PlatoTableAdapter platoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPlatoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn fotoDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dificultadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idRecetaDataGridViewTextBoxColumn;
     }
 }
 
