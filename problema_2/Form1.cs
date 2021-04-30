@@ -10,25 +10,25 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace problema_2
 {
-    public partial class Form1 : Form
+    public partial class frmMenu : Form
     {
         
         
-        public Form1()
+        public frmMenu()
         {
             InitializeComponent();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            Categoria menutable = new Categoria();
-            menutable.ShowDialog();
+            VentanaComandos comandos = new VentanaComandos(2);
+            comandos.ShowDialog();
         }
 
         private void btnRecetas_Click(object sender, EventArgs e)
         {
-            verreceta recetas = new verreceta();
-            recetas.ShowDialog();
+            VentanaComandos comandos = new VentanaComandos(3);
+            comandos.ShowDialog();
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
@@ -38,13 +38,14 @@ namespace problema_2
 
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-            Almacen almacen = new Almacen();
-            almacen.ShowDialog();
+            VentanaComandos comandos = new VentanaComandos(4);
+            comandos.ShowDialog();
         }
 
         private void btningredientes_Click(object sender, EventArgs e)
         {
-
+            VentanaComandos comandos = new VentanaComandos(5);
+            comandos.ShowDialog();
         }
 
         private void picPlato_Click(object sender, EventArgs e)
@@ -86,6 +87,12 @@ namespace problema_2
         {
             System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
             ToolTip1.SetToolTip(this.btnSalida, "Salida");
+        }
+
+        private void btnPlatillo_Click(object sender, EventArgs e)
+        {
+            VentanaComandos comandos = new VentanaComandos(1);
+            comandos.ShowDialog();
         }
     }
 }

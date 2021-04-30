@@ -1,7 +1,7 @@
 ﻿
 namespace problema_2
 {
-    partial class Form1
+    partial class frmMenu
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,6 @@ namespace problema_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.listTabla = new System.Windows.Forms.ListBox();
             this.btnPlatillo = new System.Windows.Forms.Button();
             this.btningredientes = new System.Windows.Forms.Button();
             this.btnSalida = new System.Windows.Forms.Button();
@@ -37,15 +36,6 @@ namespace problema_2
             this.btnRecetas = new System.Windows.Forms.Button();
             this.btnCategoria = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // listTabla
-            // 
-            this.listTabla.FormattingEnabled = true;
-            this.listTabla.Location = new System.Drawing.Point(9, 10);
-            this.listTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.listTabla.Name = "listTabla";
-            this.listTabla.Size = new System.Drawing.Size(762, 537);
-            this.listTabla.TabIndex = 8;
             // 
             // btnPlatillo
             // 
@@ -59,6 +49,7 @@ namespace problema_2
             this.btnPlatillo.TabIndex = 9;
             this.btnPlatillo.UseVisualStyleBackColor = true;
             this.btnPlatillo.UseWaitCursor = true;
+            this.btnPlatillo.Click += new System.EventHandler(this.btnPlatillo_Click);
             this.btnPlatillo.MouseHover += new System.EventHandler(this.btnPlatillo_MouseHover);
             // 
             // btningredientes
@@ -74,6 +65,7 @@ namespace problema_2
             // 
             // btnSalida
             // 
+            this.btnSalida.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSalida.Image = global::problema_2.Properties.Resources.icono_Salir1;
             this.btnSalida.Location = new System.Drawing.Point(963, 388);
             this.btnSalida.Margin = new System.Windows.Forms.Padding(2);
@@ -120,22 +112,23 @@ namespace problema_2
             this.btnCategoria.Click += new System.EventHandler(this.btnMenu_Click);
             this.btnCategoria.MouseHover += new System.EventHandler(this.btnCategoria_MouseHover);
             // 
-            // Form1
+            // frmMenu
             // 
+            this.AcceptButton = this.btnPlatillo;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CancelButton = this.btnSalida;
             this.ClientSize = new System.Drawing.Size(1139, 602);
             this.Controls.Add(this.btnPlatillo);
             this.Controls.Add(this.btningredientes);
-            this.Controls.Add(this.listTabla);
             this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.btnAlmacen);
             this.Controls.Add(this.btnRecetas);
             this.Controls.Add(this.btnCategoria);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmMenu";
+            this.Text = "Menú";
             this.ResumeLayout(false);
 
         }
@@ -146,7 +139,6 @@ namespace problema_2
         private System.Windows.Forms.Button btnRecetas;
         private System.Windows.Forms.Button btnAlmacen;
         private System.Windows.Forms.Button btnSalida;
-        private System.Windows.Forms.ListBox listTabla;
         private System.Windows.Forms.Button btningredientes;
         private System.Windows.Forms.Button btnPlatillo;
     }
