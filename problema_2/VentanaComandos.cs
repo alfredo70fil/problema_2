@@ -305,8 +305,7 @@ namespace problema_2
                     break;
                 case 2:
                     conexion.Open();
-                    SqlCommand coman = new SqlCommand("UPDATE Categoria SET idCategoria=@idCategoria, Nombre=@Nombre, Descripcion=@Descripcion, Encargado=@Encargado" +
-                        "WHERE idCategoria=@idCategoria", conexion);
+                    SqlCommand coman = new SqlCommand("UPDATE Categoria SET idCategoria=@idCategoria, Nombre=@Nombre, Descripcion=@Descripcion, Encargado=@Encargado WHERE idCategoria=@idCategoria", conexion);
                     coman.Parameters.AddWithValue("@idCategoria", txtcampo1.Text);
                     coman.Parameters.AddWithValue("@Nombre", txtcampo2.Text);
                     coman.Parameters.AddWithValue("@Descripcion", txtcampo3.Text);
@@ -317,8 +316,7 @@ namespace problema_2
                     break;
                 case 3:
                     conexion.Open();
-                    SqlCommand coma = new SqlCommand("UPDATE Recetas SET idReceta=@idReceta, Nombre=@Nombre, Receta=@Receta" +
-                        "WHERE idReceta=@idReceta", conexion);
+                    SqlCommand coma = new SqlCommand("UPDATE Recetas SET idReceta=@idReceta, Nombre=@Nombre, Receta=@Receta WHERE idReceta=@idReceta", conexion);
                     coma.Parameters.AddWithValue("@idReceta", txtcampo1.Text);
                     coma.Parameters.AddWithValue("@Nombre", txtcampo2.Text);
                     coma.Parameters.AddWithValue("@Receta", txtcampo3.Text);
@@ -328,8 +326,7 @@ namespace problema_2
                     break;
                 case 4:
                     conexion.Open();
-                    SqlCommand com = new SqlCommand("UPDATE Almacen SET idAlmacen=@idAlmacen, Cantidad=@Cantidad" +
-                        "WHERE idAlmacen=@idAlmacen", conexion);
+                    SqlCommand com = new SqlCommand("UPDATE Almacen SET idAlmacen=@idAlmacen, Cantidad=@Cantidad WHERE idAlmacen=@idAlmacen", conexion);
                     com.Parameters.AddWithValue("@idAlmacen", txtcampo1.Text);
                     com.Parameters.AddWithValue("@Cantidad", txtcampo2.Text);
                     com.ExecuteNonQuery();
@@ -338,8 +335,7 @@ namespace problema_2
                     break;
                 case 5:
                     conexion.Open();
-                    SqlCommand co = new SqlCommand("UPDATE Categoria SET idIngredientes=@idIngredientes, Nombre=@Nombre, Medida=@Medida, Cantidad=@Cantidad, idAlmacen=@idAlmacen" +
-                        "WHERE idIngredientes=@idIngredientes", conexion);
+                    SqlCommand co = new SqlCommand("UPDATE ingredientes SET idIngredientes=@idIngredientes, Nombre=@Nombre, Medida=@Medida, Cantidad=@Cantidad, idAlmacen=@idAlmacen WHERE idIngredientes=@idIngredientes", conexion);
                     co.Parameters.AddWithValue("@idIngredientes", txtcampo1.Text);
                     co.Parameters.AddWithValue("@Nombre", txtcampo2.Text);
                     co.Parameters.AddWithValue("@Medida", txtcampo3.Text);
